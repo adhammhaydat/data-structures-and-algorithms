@@ -62,11 +62,10 @@ const forLoopTwoToThe = (arr) => {
   // Solution code here...
   let addArr=[];
   for(let i=0;i<arr.length;i++){
-    addArr.push(Math.pow(2,element))
+    addArr.push(Math.pow(2,arr[i]))
   }
   return addArr;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
