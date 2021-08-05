@@ -45,15 +45,11 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 ------------------------------------------------------------------------------------------------ */
 
-const addPurchases = (arr) => {
-  // Solution code here...
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-   return arr.purchasePrice.reduce(reducer,0)
+const addPurchases = (arr) =>{
+  const reducer = (accumulator, currentValue) => accumulator + currentValue.purchasePrice;
+  return arr.reduce(reducer,0) 
 };
-addPurchases([{
-  item: 'switch',
-  purchasePrice: 399
-}])
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -62,9 +58,7 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => {
-  // Solution code here...
-};
+const countNumberOfElements = (arr) =>arr.reduce(((acc, cur) => cur ? acc + 1 : acc + 0), 0);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -122,10 +116,12 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-const returnNames = (arr) => {
+let names=[];
+const returnNames = (arr) => arr.reduce(((acc, cur) => {
   // Solution code here...
-};
-
+  names.push(cur.name);
+  return names.slice(0,5);
+}),'');
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -134,9 +130,9 @@ Write a function named reversedString that takes in a string and returns a strin
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
+const reversedString = (str) =>str.split("").reduce(((rev, char) => char + rev), '');
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
