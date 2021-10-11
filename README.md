@@ -25,4 +25,5 @@ To run your tests
 
 | code 401 content         | Link                                                                              |
 | ------------------------ | --------------------------------------------------------------------------------- |
-| reverse-array| [view page](.python/README.md) |
+| reverse-array| [view page](whiteBord/README.md) |
+| array-insert-shift| [view page](whiteBord/README.md) |
