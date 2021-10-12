@@ -27,3 +27,7 @@ To run your tests
 | ------------------------ | --------------------------------------------------------------------------------- |
 | reverse-array| [view page](whiteBord/README.md) |
 | array-insert-shift| [view page](whiteBord/README.md) |
+| BinarySearch| [view page](python/code_challenges/BinarySearch/BinarySearch.md) |
+
+
+
