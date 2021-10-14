@@ -2,6 +2,41 @@
 
 ## Language: `Python`
 
+
+## Singly Linked List
+<!-- Short summary or background information -->
+The linked List is a sequence of node
+1. in the first we should create the node, name this node will be head,
+2. to insert data, we should create node to contain this data
+3. iteration over the linked list by using just while loop
+
+### Challenge
+<!-- Description of the challenge -->
+
+- [x] Create class Node
+- [x] Unite test for class Node
+- [x] Uraete class LinkedList
+- [x] Unite test for LinkedList
+- [x] Unite test for insert
+- [x] Create insert method
+- [x] Unite test for include method
+- [x] Create include method
+- [x] Unite test for to_string
+- [x] Create to_string method
+
+
+### Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+the big o for linked list is: time o(n)
+
+space : o(1)
+### API
+
+1. insert: to creating and handling putting data into node
+2. include: to check if data is exist and if it saved correctly
+3. to_string: to print data inside nodes as string format
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
@@ -74,3 +109,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
+
+___________________________________________________________________________
+
