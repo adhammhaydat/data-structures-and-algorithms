@@ -95,9 +95,10 @@ class LinkedList:
 
   def to_string(self):
       curent=self.head
-      while curent :
-          print(curent.data)
-          curent=curent.next
+      while curent.next :
+
+          return curent.data
+
 
 li=LinkedList()
 li.insert(5)

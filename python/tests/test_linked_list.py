@@ -108,3 +108,20 @@ def test_linked_list_includes_twice2():
 
   # Assert
   assert actual == expected
+
+# Can properly return a collection of all the values that exist in the linked list
+def test_linked_list_to_string_twice():
+  # Arrange
+  expected =[1,2,3]
+  ll = LinkedList()
+
+  # Act
+  ll.insert(1)
+  ll.insert(2)
+  ll.insert(3)
+  actual=[]
+  actual.append(ll.to_string())
+
+  # Assert
+  for i in range(len(actual)):
+   assert actual[i] == expected[i]
