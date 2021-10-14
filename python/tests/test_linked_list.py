@@ -67,19 +67,16 @@ def test_linked_list_insert():
 
 def test_linked_list_insert_twice():
   # Arrange
-  expected = 0
-  ll = LinkedList()
-
-  # Act
-  ll.insert(1)
-  ll.insert(0)
-  node = ll.head
-  actual = node.data
-
-  # Assert
-
-  assert actual == expected
-  assert ll.head.next.data == 1
+    expected = 0
+    ll = LinkedList()
+    # Act
+    ll.insert(0)
+    ll.insert(1)
+    node = ll.head
+    actual = node.data
+    # Assert
+    assert actual == expected
+    assert ll.head.next.data == 1
 
 # Will return true when finding a value within the linked list that exists
 
@@ -96,6 +93,7 @@ def test_linked_list_includes_twice():
   # Assert
   assert actual == expected
 
+
 def test_linked_list_includes_twice2():
   # Arrange
   expected =False
@@ -108,6 +106,8 @@ def test_linked_list_includes_twice2():
 
   # Assert
   assert actual == expected
+
+
 
 # Can properly return a collection of all the values that exist in the linked list
 def test_linked_list_to_string_twice():
