@@ -25,7 +25,7 @@ To run your tests
 
 | code 401 content         | Link                                                                              |
 | ------------------------ | --------------------------------------------------------------------------------- |
-| reverse-array| [view page](whiteBord/README.md) |
+| reverse-array| [view page](python/code_challenges/array-reverse/array-reverse.md) |
 | array-insert-shift| [view page](whiteBord/README.md) |
 | BinarySearch| [view page](python/code_challenges/BinarySearch/BinarySearch.md) |
 
