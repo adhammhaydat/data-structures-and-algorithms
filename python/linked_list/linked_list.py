@@ -1,4 +1,4 @@
-
+import re
 
 from typing import Counter
 
@@ -77,8 +77,6 @@ class LinkedList:
       returns: boolian
       """
       curent=self.head
-      if not self.head:
-          return False
       while curent :
 
 
@@ -91,13 +89,22 @@ class LinkedList:
 
 
 
-
+# "{  } -> {  } -> {  } -> NULL"
 
   def to_string(self):
       curent=self.head
-      while curent.next :
+      new_list=[]
 
-          return curent.data
+      while curent :
+
+          some_data=f"{ {str(curent.data)}} => "
+          new_list.append( some_data)
+          curent=curent.next
+      new_list.append("NULL")
+      list=str(new_list)
+      x=re.sub(',(?!\s+\d$)', '', list)
+      y=re.sub("(?!\s+\d$)", "", x)
+      print(y)
 
 
 li=LinkedList()
