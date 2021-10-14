@@ -83,11 +83,13 @@ class LinkedList:
 
 
           if curent.data==data:
-
+              curent= curent.next
               return True
-          curent= curent.next
 
-          
+          else:return False
+
+
+
 
 
 

@@ -83,16 +83,28 @@ def test_linked_list_insert_twice():
 
 # Will return true when finding a value within the linked list that exists
 
-def test_linked_list_to_string_twice():
+def test_linked_list_includes_twice():
   # Arrange
   expected =True
   ll = LinkedList()
 
   # Act
   ll.insert(0)
- 
+
   actual = ll.includes(0)
 
   # Assert
   assert actual == expected
 
+def test_linked_list_includes_twice2():
+  # Arrange
+  expected =False
+  ll = LinkedList()
+
+  # Act
+  ll.insert(0)
+
+  actual = ll.includes(1)
+
+  # Assert
+  assert actual == expected
