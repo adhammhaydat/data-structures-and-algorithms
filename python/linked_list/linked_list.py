@@ -85,6 +85,72 @@ class LinkedList:
               return True
 
           else:return False
+  def append(self, value):
+    """"
+    Insert creates a Node with the value that was passed and adds
+    it to the head of the linked list shifting all other values down
+
+    arguments:
+    value : any
+
+    returns: None
+    """
+
+    # create new node
+
+    # self.head =new_node
+    current = self.head
+    if current == None:
+        self.head = Node(value, self.head)
+        return
+    while current.next != None:
+            current=current.next
+    new_node=Node(value)
+
+    current.next=new_node
+
+  def insert_before(self,value,new_value):
+        if self.head is None:
+            print("List has no element")
+            return
+
+        if value == self.head.data:
+            new_node = Node(new_value)
+            new_node.next = self.head
+            self.head = new_node
+            return
+
+        current = self.head
+        print(current.next)
+        while current.next is not None:
+            if current.next.data == value:
+                break
+            current = current.next
+        if current.next is None:
+            print("item not in the list")
+        else:
+            new_node = Node(new_value)
+            new_node.next = current.next
+            current.next = new_node
+
+  def insert_after(self,value,new_value):
+      current = self.start_node
+      print(current.next)
+      while current is not None:
+        if current.data == value:
+            break
+        current = current.next
+      if current is None:
+        print("item not in the list")
+      else:
+        new_node = Node(new_value)
+        new_node.next = current.next
+        current.next = new_node
+
+
+
+
+
 
 
 
@@ -95,20 +161,25 @@ class LinkedList:
       curent=self.head
       new_list=[]
 
-      while curent :
+      while curent:
 
-          some_data=f"{ {str(curent.data)}} => "
+        #  some_data=f"{ {str(curent.data)}} => "
+          some_data=curent.data
           new_list.append( some_data)
           curent=curent.next
-      new_list.append("NULL")
-      list=str(new_list)
-      x=re.sub(',(?!\s+\d$)', '', list)
-      y=re.sub("(?!\s+\d$)", "", x)
-      print(y)
+      print(len(new_list))
+      return new_list
+    #   new_list.append("NULL")
+    #   list=str(new_list)
+    #   x=re.sub(',(?!\s+\d$)', '', list)
+    #   y=re.sub("(?!\s+\d$)", "", x)
+    #   print(y)
 
 
 li=LinkedList()
-li.insert(5)
-li.insert(0)
+li.append(5)
+li.append(0)
+li.append(4)
+li.insert_before(4,2)
 li.includes(9)
-li.to_string()
+print(li.to_string())
