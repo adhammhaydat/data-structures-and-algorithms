@@ -116,12 +116,44 @@ def test_linked_list_to_string_twice():
   ll = LinkedList()
 
   # Act
-  ll.insert(1)
-  ll.insert(2)
-  ll.insert(3)
+  ll.append(1)
+  ll.append(2)
+  ll.append(3)
   actual=[]
   actual.append(ll.to_string())
 
   # Assert
   for i in range(len(actual)):
-   assert actual[i] == expected[i]
+      assert actual[i] == expected
+
+# def test_linked_list_insert_before_one():
+#   expected = [1,2,4,3]
+#   ll = LinkedList()
+
+#   # Act
+#   ll.append(1)
+#   ll.append(2)
+#   ll.append(3)
+#   ll.insert_before(3,4)
+#   actual=[]
+#   actual.append(ll.to_string())
+
+#   # Assert
+#   for i in range(len(actual)):
+#       assert actual[i] == expected
+
+# def test_linked_list_insert_after_one():
+#   expected =[1,2,4,3]
+#   ll = LinkedList()
+
+#   # Act
+#   ll.append(1)
+#   ll.append(2)
+#   ll.append(3)
+#   ll.insert_before(3,4)
+#   actual=[]
+#   actual.append(ll.to_string())
+
+#   # Assert
+#   for i in range(len(actual)):
+#       assert actual[i] == expected
