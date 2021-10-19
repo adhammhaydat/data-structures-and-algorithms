@@ -36,9 +36,7 @@ space : o(1)
 1. insert: to creating and handling putting data into node
 2. include: to check if data is exist and if it saved correctly
 3. to_string: to print data inside nodes as string format
-3. append: to add node in the end
-4. add before: add a node to the linked list before target value
-5. add after : add a node to the linked list after the target value
+
 
 ### Folder and Challenge Setup
 
