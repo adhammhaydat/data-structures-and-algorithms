@@ -164,14 +164,41 @@ class LinkedList:
       new_string +="NULL"
       return new_string
 
-
+def zip_lists(linked_a, linked_b):
+    current1=linked_a.head
+    current2=linked_b.head
+    helper=''
+    if not current1 and not current2:
+        return 'empty list'
+    if not current1:
+        return str(linked_b)
+    if not current2:
+        return str(linked_a)
+    while current1 and current2:
+        if current2:
+            helper=current1.next
+            current1.next=current2
+            current1=helper
+        if current1:
+            helper=current2.next
+            current2.next=current1
+            current2=helper
+    return str(linked_a)
 li=LinkedList()
+l2=LinkedList()
+
 li.insert(5)
 li.append(0)
 li.append(4)
-li.insert_before(4,2)
-li.includes(9)
-li.kth_from_end(3)
+# li.insert_before(4,2)
+# li.includes(9)
+# li.kth_from_end(3)
 print(li)
+
+l2.insert(1)
+l2.append(2)
+l2.append(3)
+print(l2)
+print(zip_lists(li,l2))
 
 

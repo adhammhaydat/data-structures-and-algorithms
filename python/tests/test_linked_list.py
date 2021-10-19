@@ -1,4 +1,4 @@
-from linked_list.linked_list import Node,LinkedList
+from linked_list.linked_list import Node,LinkedList,zip_lists
 
 
 
@@ -203,3 +203,17 @@ def test_linked_list_kth_from_end_not_positive_length():
         ll.append(3)
         ll.append(4)
         actual=ll.kth_from_end(-4)
+
+def test_linked_list_zip_lists():
+    expected="{5} -> {1} -> {0} -> {2} -> {4} -> {3} -> NULL"
+    ll=LinkedList()
+    ll2=LinkedList()
+    ll.insert(5)
+    ll.append(0)
+    ll.append(4)
+    ll2.insert(1)
+    ll2.append(2)
+    ll2.append(3)
+
+    actual=zip_lists(ll,ll2)
+    assert actual==expected
