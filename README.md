@@ -29,9 +29,9 @@ To run your tests
 | array-insert-shift| [view page](whiteBord/README.md) |
 | BinarySearch| [view page](python/code_challenges/BinarySearch/BinarySearch.md) |
 | Single LinkedList| [view page](python/README.md) |
-| linked-list-insertions| [view page](python/Code_Challenge06.md) |
-| linked-list-kth| [view page](python/Code_Challenge07.md) |
-| linked-list-zip| [view page](python/Code_Challenge08.md) |
+| linked-list-insertions| [view page](python/code_challenges/Code_Challenge06.md) |
+| linked-list-kth| [view page](python/code_challenges/Code_Challenge07.md) |
+| linked-list-zip| [view page](python/code_challenges/Code_Challenge08.md) |
 
 
 
