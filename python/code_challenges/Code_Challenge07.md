@@ -9,7 +9,7 @@ You have access to the Node class and all the properties on the Linked List clas
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](python/image/kth_from_end.jpg)
+![](../image/kth_from_end.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 create a method that accept a number, k

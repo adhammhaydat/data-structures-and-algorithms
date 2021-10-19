@@ -8,14 +8,14 @@
 <!-- Embedded whiteboard image -->
 1.append():
 
-![](python/image/append.jpg)
+![](../image/append.jpg)
 
 2.insert_befor():
 
-![](python/image/insert_befor.jpg)
+![](../image/insert_befor.jpg)
 
 3.insert_after():
-![](python/image/insert_after.jpg)
+![](../image/insert_after.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 understanding how linked list work and how we can moving insid it by using pointer
