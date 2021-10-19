@@ -180,6 +180,19 @@ def test_linked_list_kth_from_end_equal_length():
         actual=ll.kth_from_end(4)
 
 # @pytest.mark.skip()
+def test_linked_list_kth_from_end():
+    #range
+
+    ll = LinkedList()
+    expected=2
+
+    #Act
+    ll.insert(1)
+    ll.append(2)
+    ll.append(3)
+    ll.append(4)
+    actual=ll.kth_from_end(1)
+    assert actual==expected
 def test_linked_list_kth_from_end_not_positive_length():
     with pytest.raises(Exception):
         ll = LinkedList()

@@ -149,7 +149,7 @@ class LinkedList:
 
             for i in range(1,count-target-1):
                 current = current.next
-            print(current.data)
+            return current.data
         elif target>count-1:
             raise Exception('the target greater than count of element in the linked list')
         elif target < 0:
