@@ -51,18 +51,8 @@ class LinkedList:
     returns: None
     """
 
-    # create new node
 
-    # self.head =new_node
-    current = self.head
-    if current == None:
-        self.head = Node(value, self.head)
-        return
-    while current.next != None:
-            current=current.next
-    new_node=Node(value)
-
-    current.next=new_node
+    self.head = Node(value, self.head)
 
 
 
@@ -100,19 +90,20 @@ class LinkedList:
 
     # self.head =new_node
     current = self.head
-    if current == None:
+    if not current :
         self.head = Node(value, self.head)
         return
-    while current.next != None:
+    while current.next :
             current=current.next
     new_node=Node(value)
 
     current.next=new_node
 
+
   def insert_before(self,value,new_value):
         if self.head is None:
             print("List has no element")
-            return
+            return "List has no element"
 
         if value == self.head.data:
             new_node = Node(new_value)
@@ -134,14 +125,14 @@ class LinkedList:
             current.next = new_node
 
   def insert_after(self,value,new_value):
-      current = self.start_node
+      current = self.head
       print(current.next)
       while current is not None:
         if current.data == value:
             break
         current = current.next
       if current is None:
-        print("item not in the list")
+        return "item not in the list"
       else:
         new_node = Node(new_value)
         new_node.next = current.next
@@ -157,29 +148,23 @@ class LinkedList:
 
 # "{  } -> {  } -> {  } -> NULL"
 
-  def to_string(self):
+  def __str__(self):
       curent=self.head
-      new_list=[]
-
+      new_string=''
       while curent:
 
-        #  some_data=f"{ {str(curent.data)}} => "
-          some_data=curent.data
-          new_list.append( some_data)
+
+          new_string +=f"{{{curent.data}}} -> "
           curent=curent.next
-      print(len(new_list))
-      return new_list
-    #   new_list.append("NULL")
-    #   list=str(new_list)
-    #   x=re.sub(',(?!\s+\d$)', '', list)
-    #   y=re.sub("(?!\s+\d$)", "", x)
-    #   print(y)
+      new_string +="NULL"
+      return new_string
 
 
 li=LinkedList()
-li.append(5)
+li.insert(5)
 li.append(0)
 li.append(4)
 li.insert_before(4,2)
+li.insert_after(4,5)
 li.includes(9)
-print(li.to_string())
+print(li)
