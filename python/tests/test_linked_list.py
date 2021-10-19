@@ -67,7 +67,7 @@ def test_linked_list_insert():
 
 def test_linked_list_insert_twice():
   # Arrange
-    expected = 0
+    expected = 1
     ll = LinkedList()
     # Act
     ll.insert(0)
@@ -76,7 +76,7 @@ def test_linked_list_insert_twice():
     actual = node.data
     # Assert
     assert actual == expected
-    assert ll.head.next.data == 1
+    assert ll.head.next.data == 0
 
 # Will return true when finding a value within the linked list that exists
 
@@ -112,48 +112,46 @@ def test_linked_list_includes_twice2():
 # Can properly return a collection of all the values that exist in the linked list
 def test_linked_list_to_string_twice():
   # Arrange
-  expected =[1,2,3]
+  expected ='{1} -> {2} -> {3} -> NULL'
   ll = LinkedList()
 
   # Act
   ll.append(1)
   ll.append(2)
   ll.append(3)
-  actual=[]
-  actual.append(ll.to_string())
-
+  actual=str(ll)
   # Assert
-  for i in range(len(actual)):
-      assert actual[i] == expected
+  assert actual== expected
 
+# @pytest.mark.skip()
 def test_linked_list_insert_before_one():
-  expected = [1,2,4,3]
+  expected ='{1} -> {2} -> {4} -> {3} -> NULL'
+
   ll = LinkedList()
 
   # Act
-  ll.append(1)
+  ll.insert(1)
   ll.append(2)
   ll.append(3)
   ll.insert_before(3,4)
-  actual=[]
-  actual.append(ll.to_string())
+  actual=str(ll)
 
   # Assert
-  for i in range(len(actual)):
-      assert actual[i] == expected
+  assert actual== expected
 
+
+# @pytest.mark.skip()
 def test_linked_list_insert_after_one():
-  expected =[1,2,4,3]
+  expected ='{1} -> {2} -> {4} -> {3} -> NULL'
+
   ll = LinkedList()
 
   # Act
-  ll.append(1)
+  ll.insert(1)
   ll.append(2)
   ll.append(3)
-  ll.insert_before(3,4)
-  actual=[]
-  actual.append(ll.to_string())
+  ll.insert_after(2,4)
+  actual=str(ll)
 
   # Assert
-  for i in range(len(actual)):
-      assert actual[i] == expected
+  assert actual== expected

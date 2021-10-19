@@ -37,6 +37,7 @@ space : o(1)
 2. include: to check if data is exist and if it saved correctly
 3. to_string: to print data inside nodes as string format
 
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
