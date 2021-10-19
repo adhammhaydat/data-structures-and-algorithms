@@ -138,22 +138,26 @@ class LinkedList:
         new_node.next = current.next
         current.next = new_node
 
+  def kth_from_end(self,target):
+        current = self.head
+        count=0
+        while current:
+            count += 1
+            current = current.next
+        current=self.head
+        if target < count:
 
-
-
-
-
-
-
-
-# "{  } -> {  } -> {  } -> NULL"
-
+            for i in range(1,count-target-1):
+                current = current.next
+            print(current.data)
+        elif target>count-1:
+            raise Exception('the target greater than count of element in the linked list')
+        elif target<0:
+            raise Exception('value not positive')
   def __str__(self):
       curent=self.head
       new_string=''
       while curent:
-
-
           new_string +=f"{{{curent.data}}} -> "
           curent=curent.next
       new_string +="NULL"
@@ -165,6 +169,8 @@ li.insert(5)
 li.append(0)
 li.append(4)
 li.insert_before(4,2)
-li.insert_after(4,5)
 li.includes(9)
+li.kth_from_end(-3)
 print(li)
+
+

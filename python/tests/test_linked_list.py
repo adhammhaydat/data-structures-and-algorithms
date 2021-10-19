@@ -155,3 +155,37 @@ def test_linked_list_insert_after_one():
 
   # Assert
   assert actual== expected
+
+def test_linked_list_kth_from_end_greater_length():
+    # Arrange
+    with pytest.raises(Exception):
+        ll = LinkedList()
+
+    #Act
+        ll.insert(1)
+        ll.append(2)
+        ll.append(3)
+        ll.insert(4)
+        actual=ll.kth_from_end(5)
+
+def test_linked_list_kth_from_end_equal_length():
+    with pytest.raises(Exception):
+        ll = LinkedList()
+
+    #Act
+        ll.insert(1)
+        ll.append(2)
+        ll.append(3)
+        ll.insert(4)
+        actual=ll.kth_from_end(4)
+
+def test_linked_list_kth_from_end_not_positive_length():
+    with pytest.raises(Exception):
+        ll = LinkedList()
+
+    #Act
+        ll.insert(1)
+        ll.append(2)
+        ll.append(3)
+        ll.insert(4)
+        actual=ll.kth_from_end(-4)
