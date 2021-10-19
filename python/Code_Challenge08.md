@@ -1,6 +1,6 @@
 # Challenge Summary
 <!-- Description of the challenge -->
-
+pull req:https://github.com/adhammhaydat/data-structures-and-algorithms/pull/28
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
