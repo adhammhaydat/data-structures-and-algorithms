@@ -9,14 +9,14 @@ pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/26
 <!-- Embedded whiteboard image -->
 1.append():
 
-![](image/append.jpg)
+![](../image/append.jpg)
 
 2.insert_befor():
 
-![](image/insert_befor.jpg)
+![](../image/insert_befor.jpg)
 
 3.insert_after():
-![](image/insert_after.jpg)
+![](../image/insert_after.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 understanding how linked list work and how we can moving insid it by using pointer
@@ -27,4 +27,4 @@ big o for each method shown in whitebord
 <!-- Show how to run your code, and examples of it in action -->
 create a
 w
-whitebord for each method and write the algorithm to descripe the input, proccess and output 
+whitebord for each method and write the algorithm to descripe the input, proccess and output
