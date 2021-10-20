@@ -163,9 +163,6 @@ class LinkedList:
         prev = current
         current = next
       self.head=prev
-      while current:
-          print(current.data)
-          current=current.next
   def __str__(self):
       curent=self.head
       new_string=''

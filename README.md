@@ -32,6 +32,7 @@ To run your tests
 | linked-list-insertions| [view page](python/code_challenges/Code_Challenge06.md) |
 | linked-list-kth| [view page](python/code_challenges/Code_Challenge07.md) |
 | linked-list-zip| [view page](python/code_challenges/Code_Challenge08.md) |
+| linked-list-zip| [view page](python/code_challenges/Code_Challenge09.md) |
 
 
 
