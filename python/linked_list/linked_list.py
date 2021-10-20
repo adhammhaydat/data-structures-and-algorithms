@@ -154,7 +154,18 @@ class LinkedList:
             raise Exception('the target greater than count of element in the linked list')
         elif target < 0:
             raise Exception('value not positive')
-
+  def revers(self):
+      prev=None
+      current=self.head
+      while  current is not None:
+        next=current.next
+        current.next=prev
+        prev = current
+        current = next
+      self.head=prev
+      while current:
+          print(current.data)
+          current=current.next
   def __str__(self):
       curent=self.head
       new_string=''
@@ -186,7 +197,7 @@ def zip_lists(linked_a, linked_b):
     return str(linked_a)
 li=LinkedList()
 l2=LinkedList()
-
+l3=LinkedList()
 li.insert(5)
 li.append(0)
 li.append(4)
@@ -198,7 +209,11 @@ print(li)
 l2.insert(1)
 l2.append(2)
 l2.append(3)
-print(l2)
+l3.insert(1)
+l3.append(2)
+l3.append(3)
+l3.revers()
+print(l3)
 print(zip_lists(li,l2))
 
 

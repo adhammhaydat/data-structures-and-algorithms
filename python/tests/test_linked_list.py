@@ -203,6 +203,14 @@ def test_linked_list_kth_from_end_not_positive_length():
         ll.append(3)
         ll.append(4)
         actual=ll.kth_from_end(-4)
+def test_linked_list_kth_from_end_not_positive_length():
+    with pytest.raises(Exception):
+        ll = LinkedList()
+
+    #Act
+        ll.insert(1)
+
+        actual=ll.kth_from_end(4)
 
 def test_linked_list_zip_lists():
     expected="{5} -> {1} -> {0} -> {2} -> {4} -> {3} -> NULL"
@@ -216,4 +224,16 @@ def test_linked_list_zip_lists():
     ll2.append(3)
 
     actual=zip_lists(ll,ll2)
+    assert actual==expected
+
+def test_linked_list_revers():
+    #range
+    ll3=LinkedList()
+    expected="{3} -> {2} -> {1} -> NULL"
+    #Act
+    ll3.insert(1)
+    ll3.append(2)
+    ll3.append(3)
+    ll3.revers()
+    actual=str(ll3)
     assert actual==expected
