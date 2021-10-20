@@ -1,7 +1,7 @@
 # Challenge Summary
 <!-- Description of the challenge -->
 create a method that make a LinkedList in reverse  format
-
+pull req:https://github.com/adhammhaydat/data-structures-and-algorithms/pull/29
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![](../image/revers.jpg)
