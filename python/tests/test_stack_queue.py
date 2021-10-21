@@ -27,7 +27,25 @@ def test_pop_stack(stack):
         stack.pop()
         stack.pop()
         actuale=stack.peek()
+
+def test_peek_second_value_stack(stack):
+    #range
+    excepted = 2
+    #Act
+    stack.pop()
+    actuale = stack.peek()
     #assert
+    assert actuale==excepted
+
+def test_instantiate_empty_stack():
+    #range
+    stack=Stack()
+    excepted = None
+    #Act
+
+    actuale = stack.value
+    #assert
+    assert actuale==excepted
 
 @pytest.fixture
 def stack():
