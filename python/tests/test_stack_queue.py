@@ -97,3 +97,10 @@ def test_dequeue_in_queue(queue):
     queue.dequeue()
     actuale=queue.peek()
     assert actuale==excepted
+
+def test_peek_in_queue(queue):
+    #range
+    excepted=2
+    queue.dequeue()
+    actuale=queue.peek()
+    assert actuale==excepted
