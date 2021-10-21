@@ -74,14 +74,19 @@ def queue():
 
     return queue
 
-def test_enqueue(queue):
+def test_enqueue():
     #range
+    queue=Queue()
+    queue.enqueue(1)
     excepted=1
     actuale=queue.peek()
     assert actuale==excepted
 
-# def test_enqueue(queue):
-#     #range
-#     excepted=1
-#     actuale=queue.peek()
-#     assert actuale==excepted
+def test_enqueue_multiple_values_into_queue():
+    #range
+    excepted=1
+    queue=Queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    actuale=queue.peek()
+    assert actuale==excepted
