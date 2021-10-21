@@ -119,3 +119,9 @@ def test_instantiate_an_empty_queue():
     queue=Queue()
     actuale=queue.is_empty()
     assert actuale==excepted
+
+def test_dequeue_on_empty_queue_raises_exception():
+    with pytest.raises(Exception):
+        queue=Queue()
+        queue.dequeue()
+
