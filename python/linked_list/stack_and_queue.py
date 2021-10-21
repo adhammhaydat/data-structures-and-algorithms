@@ -45,8 +45,8 @@ class Stack:
 
         """
         if not Self.top:
-            return False
-        return True
+            return True
+        return False
 
 class Queue():
     def __init__(self):
@@ -91,7 +91,7 @@ class Queue():
         """
         if not self.front:
             raise Exception("The queue are empty")
-        return self.front.value
+        return self.front.data
 
     def is_empty(self):
         """

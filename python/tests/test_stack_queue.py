@@ -55,7 +55,6 @@ def test_peek_empty_stack():
 
             actuale = stack.peek()
 
-
 @pytest.fixture
 def stack():
     stack = Stack()
@@ -64,3 +63,25 @@ def stack():
     stack.push("adham")
 
     return stack
+
+#################################### **Queue**#####################################
+@pytest.fixture
+def queue():
+    queue = Queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue("adham")
+
+    return queue
+
+def test_enqueue(queue):
+    #range
+    excepted=1
+    actuale=queue.peek()
+    assert actuale==excepted
+
+# def test_enqueue(queue):
+#     #range
+#     excepted=1
+#     actuale=queue.peek()
+#     assert actuale==excepted
