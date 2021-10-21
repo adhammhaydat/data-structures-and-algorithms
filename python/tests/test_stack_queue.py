@@ -47,6 +47,15 @@ def test_instantiate_empty_stack():
     #assert
     assert actuale==excepted
 
+def test_peek_empty_stack():
+        with pytest.raises(Exception):
+            #range
+            stack=Stack()
+            #Act
+
+            actuale = stack.peek()
+
+
 @pytest.fixture
 def stack():
     stack = Stack()
