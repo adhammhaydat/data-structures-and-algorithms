@@ -114,3 +114,8 @@ def test_empty_queue_after_multiple_dequeues(queue):
         queue.dequeue()
         actuale=queue.is_empty()
 
+def test_instantiate_an_empty_queue():
+    excepted=True
+    queue=Queue()
+    actuale=queue.is_empty()
+    assert actuale==excepted

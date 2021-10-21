@@ -99,5 +99,5 @@ class Queue():
         Returns: Boolean indicating whether or not the queue is empty
         """
         if not self.front:
-            return False
-        return True
+            return True
+        return False
