@@ -104,3 +104,13 @@ def test_peek_in_queue(queue):
     queue.dequeue()
     actuale=queue.peek()
     assert actuale==excepted
+
+def test_empty_queue_after_multiple_dequeues(queue):
+    with pytest.raises(Exception):
+        #range
+
+        queue.dequeue()
+        queue.dequeue()
+        queue.dequeue()
+        actuale=queue.is_empty()
+
