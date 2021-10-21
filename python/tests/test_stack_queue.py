@@ -40,10 +40,10 @@ def test_peek_second_value_stack(stack):
 def test_instantiate_empty_stack():
     #range
     stack=Stack()
-    excepted = None
+    excepted =True
     #Act
 
-    actuale = stack.value
+    actuale = stack.is_empty()
     #assert
     assert actuale==excepted
 
@@ -88,5 +88,12 @@ def test_enqueue_multiple_values_into_queue():
     queue=Queue()
     queue.enqueue(1)
     queue.enqueue(2)
+    actuale=queue.peek()
+    assert actuale==excepted
+
+def test_dequeue_in_queue(queue):
+    #range
+    excepted=2
+    queue.dequeue()
     actuale=queue.peek()
     assert actuale==excepted

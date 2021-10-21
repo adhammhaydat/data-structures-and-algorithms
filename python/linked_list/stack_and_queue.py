@@ -38,13 +38,13 @@ class Stack:
             raise Exception("The stack are empty")
         return self.top.data
 
-    def is_empty(slef):
+    def is_empty(self):
         """
         Arguments: none
         Returns: Boolean indicating whether or not the stack is empty.
 
         """
-        if not Self.top:
+        if not self.top:
             return True
         return False
 
@@ -79,7 +79,7 @@ class Queue():
         temp=self.front
         self.front=self.front.next
         temp.next=None
-        return self.front.value
+        return self.front.data
 
 
     def peek(self):
