@@ -6,6 +6,7 @@ Stack is a container of objects that are inserted and removed according to the l
 <!-- Description of the challenge -->
 Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
 
+pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/31
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
