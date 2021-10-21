@@ -18,6 +18,13 @@ def test_push_multy_value_stack(stack):
     #assert
     assert actuale==excepted
 
+def test_pop_stack(stack):
+    #range
+    excepted="adham"
+    #Act
+    actuale=stack.pop()
+    #assert
+    assert actuale==excepted
 @pytest.fixture
 def stack():
     stack = Stack()

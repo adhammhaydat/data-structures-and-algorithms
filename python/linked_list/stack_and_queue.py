@@ -26,7 +26,7 @@ class Stack:
         temp=self.top
         self.top=self.top.next
         temp.next=None
-        return temp.value
+        return temp.data
 
     def peek(self):
         """
