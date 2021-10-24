@@ -1,5 +1,6 @@
 from linked_list.stack_and_queue import Stack,Queue
-from linked_list.linked_list import Node
+# from linked_list.linked_list import Node
+from linked_list.pseudo_queue import Pseudo_queue
 import pytest
 
 def test_push_onto_stack(stack):
@@ -125,3 +126,14 @@ def test_dequeue_on_empty_queue_raises_exception():
         queue=Queue()
         queue.dequeue()
 
+def test_enqueue_pseudo():
+    #range
+    queue=Pseudo_queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    excepted1=1
+    excepted2=2
+    actuale1=queue.front.data
+    actuale2=queue.rear.data
+    assert actuale1==excepted1
+    assert actuale2==excepted2
