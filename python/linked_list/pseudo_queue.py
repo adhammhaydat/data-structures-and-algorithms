@@ -27,7 +27,7 @@ class Pseudo_queue:
         Extracts a value from the PseudoQueue,
         using a first-in, first-out approach.h
         """
-        if not self.rear:
+        if not self.front:
             raise Exception('The queue are empty')
         temp=self.front
         self.front=self.front.next

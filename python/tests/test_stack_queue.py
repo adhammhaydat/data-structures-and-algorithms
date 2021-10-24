@@ -137,3 +137,12 @@ def test_enqueue_pseudo():
     actuale2=queue.rear.data
     assert actuale1==excepted1
     assert actuale2==excepted2
+
+def test_dequeue_pseudo():
+    queue=Pseudo_queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    excepted =2
+    actuale=queue.dequeue()
+    assert actuale==excepted
+
