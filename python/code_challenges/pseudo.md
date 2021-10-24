@@ -5,6 +5,7 @@ Create a new class called pseudo queue contain 2 method:
 2. dequeue: Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
 
 make some unit test to check if your soluation is perfect
+pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/32
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![](../image/pesudo.jpg)
