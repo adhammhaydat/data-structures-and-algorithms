@@ -1,6 +1,7 @@
 from linked_list.stack_and_queue import Stack,Queue
 # from linked_list.linked_list import Node
 from linked_list.pseudo_queue import Pseudo_queue
+from linked_list.stack_queue_animal_shelter import Cat,Dog,Animal_shelter
 import pytest
 
 def test_push_onto_stack(stack):
@@ -146,3 +147,31 @@ def test_dequeue_pseudo():
     actuale=queue.dequeue()
     assert actuale==excepted
 
+################################# test animal_shetrt ###########################################3#############
+def test_enqueue_animal_shelter():
+    #range
+    cat=Cat()
+    dog=Dog()
+    animal=Animal_shelter()
+    animal.enqueue(cat)
+    animal.enqueue(dog)
+    excepted1='cat'
+    excepted2="dog"
+    actuale1=animal.front_cat.type
+    actuale2=animal.front_dog.type
+    assert actuale1==excepted1
+    assert actuale2==excepted2
+
+def test_dequeue_animal_shelter():
+    #range
+    cat=Cat()
+    dog=Dog()
+    animal=Animal_shelter()
+    animal.enqueue(cat)
+    animal.enqueue(dog)
+    excepted1='cat'
+    excepted2="dog"
+    actuale1=animal.dequeue('cat')
+    actuale2=animal.dequeue('dog')
+    assert actuale1==excepted1
+    assert actuale2==excepted2

@@ -35,6 +35,7 @@ To run your tests
 | Reverse-linked-list| [view page](python/code_challenges/code_challenge09.md) |
 | Stacks and Queues| [view page](python/code_challenges/stack_and_queue.md) |
 | Pseudo Queues| [view page](python/code_challenges/pseudo.md) |
+| animal shelter| [view page](python/code_challenges/animal-shelter.md) |
 
 
 
