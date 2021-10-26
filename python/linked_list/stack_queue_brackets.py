@@ -61,4 +61,4 @@ def validate_brackets(string):
 
 if __name__ == '__main__':
     print('good')
-    # print(validate_brackets('()[[Extra Characters]]'))
+    print(validate_brackets('()[[Extra Characters]]'))
