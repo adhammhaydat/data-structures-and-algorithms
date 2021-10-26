@@ -5,4 +5,9 @@ def test_validat_true():
 
     actual=validate_brackets("{}{Code}[Fellows](())")
     assert actual==excepted
-    
+
+def test_validat_False():
+    excepted=False
+
+    actual=validate_brackets("{}{Code}[Fellows](()")
+    assert actual==excepted
