@@ -106,7 +106,7 @@ def test_post_order():
   actual = tree.post_order()
   # assert actual is same as expected
   assert actual == expected
-  print("test_post_order_ passed")
+
 
 def test_in_order():
   # Arrange
@@ -146,3 +146,26 @@ def  test_instantiate_an_empty_tree():
     tree.root = None
     actual=tree.in_order()
     assert actual == excepted
+def test_max_number():
+  # Arrange
+  # Create tree instance
+  tree = BinaryTree()
+
+  # Create Nodes for 1,2,3,4
+  a_node = Node(1)
+  b_node = Node(212)
+  c_node = Node(5)
+  d_node = Node(4)
+  a_node.left = b_node
+  a_node.right = c_node
+  b_node.left = d_node
+
+  # Add Root node to tree
+  tree.root=a_node
+
+  # set expected list
+  expected = 212
+  # set actual to return value of post_order call
+  actual = tree.find_maximum_value()
+  # assert actual is same as expected
+  assert actual == expected

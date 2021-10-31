@@ -25,19 +25,20 @@ To run your tests
 
 | code 401 content         | Link                                                                              |
 | ------------------------ | --------------------------------------------------------------------------------- |
-| reverse-array| [view page](python/code_challenges/array-reverse/array-reverse.md) |
-| array-insert-shift| [view page](whiteBord/README.md) |
-| BinarySearch| [view page](python/code_challenges/BinarySearch/BinarySearch.md) |
-| Single LinkedList| [view page](python/README.md) |
+| reverse-array         | [view page](python/code_challenges/array-reverse/array-reverse.md) |
+| array-insert-shift    | [view page](whiteBord/README.md) |
+| BinarySearch          | [view page](python/code_challenges/BinarySearch/BinarySearch.md) |
+| Single LinkedList     | [view page](python/README.md) |
 | linked-list-insertions| [view page](python/code_challenges/Code_Challenge06.md) |
-| linked-list-kth| [view page](python/code_challenges/Code_Challenge07.md) |
-| linked-list-zip| [view page](python/code_challenges/Code_Challenge08.md) |
-| Reverse-linked-list| [view page](python/code_challenges/code_challenge09.md) |
-| Stacks and Queues| [view page](python/code_challenges/stack_and_queue.md) |
-| Pseudo Queues| [view page](python/code_challenges/pseudo.md) |
-| animal shelter| [view page](python/code_challenges/animal-shelter.md) |
-| validate_brackets| [view page](python/code_challenges/validate_brackets.md) |
-| Tree| [view page](python/code_challenges/tree.md) |
+| linked-list-kth       | [view page](python/code_challenges/Code_Challenge07.md) |
+| linked-list-zip       | [view page](python/code_challenges/Code_Challenge08.md) |
+| Reverse-linked-list   | [view page](python/code_challenges/code_challenge09.md) |
+| Stacks and Queues     | [view page](python/code_challenges/stack_and_queue.md) |
+| Pseudo Queues         | [view page](python/code_challenges/pseudo.md) |
+| animal shelter        | [view page](python/code_challenges/animal-shelter.md) |
+| validate_brackets     | [view page](python/code_challenges/validate_brackets.md) |
+| Tree                  |[view page](python/code_challenges/tree.md) |
+| Tree-Max              | [view page](python/code_challenges/tree-max.md) |
 
 
 
