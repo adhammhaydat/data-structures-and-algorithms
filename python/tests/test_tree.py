@@ -2,6 +2,7 @@
 Tests for Binary Tree
 """
 
+from abc import ABC
 from linked_list.tree import BinaryTree, Node
 
 
@@ -132,9 +133,16 @@ def test_in_order():
   assert actual == expected
   print("test_in_order_ passed")
 
+def  test_instantiate_an_tree_root():
+    excepted = [1]
+    tree = BinaryTree()
+    tree.root = Node(1)
+    actual=tree.in_order()
+    assert actual == excepted
 
-test_bfs()
-test_bfs_2()
-test_pre_order()
-test_in_order()
-test_post_order()
+def  test_instantiate_an_empty_tree():
+    excepted = None
+    tree = BinaryTree()
+    tree.root = None
+    actual=tree.in_order()
+    assert actual == excepted
