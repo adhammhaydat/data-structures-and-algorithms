@@ -40,7 +40,8 @@ class BinaryTree:
     breadth = Queue()
     # breadth.enqueue(root)
     breadth.enqueue(self.root)
-
+    if not self.root:
+        return None
     list_of_items = []
 
     while breadth.peek():
@@ -81,6 +82,8 @@ class BinaryTree:
     """
     function to in order the list using Trees
     """
+    if not self.root:
+        return None
     list_of_items = []
     def walk(node):
       if node:
@@ -116,4 +119,3 @@ class BinaryTree:
 
 
 
-  

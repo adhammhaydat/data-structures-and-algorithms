@@ -140,3 +140,9 @@ def  test_instantiate_an_tree_root():
     actual=tree.in_order()
     assert actual == excepted
 
+def  test_instantiate_an_empty_tree():
+    excepted = None
+    tree = BinaryTree()
+    tree.root = None
+    actual=tree.in_order()
+    assert actual == excepted
