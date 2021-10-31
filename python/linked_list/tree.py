@@ -122,6 +122,14 @@ class BinaryTree:
         return list_of_items
 
     def find_maximum_value(self):
+        """
+        find maximum value
+        Arguments: none
+        Returns: number
+        """
+        if not self.root:
+            return "the tree are empty"
+
         list_of_items = []
 
         def walk(node):
@@ -141,14 +149,15 @@ class BinaryTree:
 tree = BinaryTree()
 
   # Create Nodes for 1,2,3,4
-a_node = Node(1)
-b_node = Node(212)
-c_node = Node(5)
-d_node = Node(4)
-a_node.left = b_node
-a_node.right = c_node
-b_node.left = d_node
+# a_node = Node(1)
+# b_node = Node(212)
+# c_node = Node(5)
+# d_node = Node(4)
+# a_node.left = b_node
+# a_node.right = c_node
+# b_node.left = d_node
 
   # Add Root node to tree
-tree.root=a_node
+# tree.root=a_node
+tree.root = None
 print(tree.find_maximum_value())
