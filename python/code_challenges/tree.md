@@ -3,6 +3,7 @@ a tree is a widely used abstract data type that simulates a hierarchical tree st
 
 pull https://github.com/adhammhaydat/data-structures-and-algorithms/pull/35
 
+second pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/36
 
 ## Challenge
 <!-- Description of the challenge -->
