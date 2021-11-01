@@ -147,7 +147,7 @@ class BinaryTree:
         return max_number
 
 
-def  breadth_first(tree):
+def breadth_first(tree):
         """
         A binary tree method which returns a list of items that it contains
 
@@ -161,8 +161,7 @@ def  breadth_first(tree):
         breadth = Queue()
         # breadth.enqueue(root)
         breadth.enqueue(tree.root)
-        if not tree.root:
-            return None
+        
         list_of_items = []
 
         while breadth.peek():
