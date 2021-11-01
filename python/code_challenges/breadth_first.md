@@ -4,6 +4,9 @@ Write a function called breadth first
 Arguments: tree
 Return: list of all values in the tree, in the order they were encountered
 
+pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/38
+
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![](../image/breadth-first.jpg)
