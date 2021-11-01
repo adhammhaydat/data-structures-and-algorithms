@@ -3,7 +3,7 @@ Tests for Binary Tree
 """
 
 from abc import ABC
-from linked_list.tree import BinaryTree, Node
+from linked_list.tree import BinaryTree, Node,breadth_first
 
 
 def test_bfs():
@@ -185,5 +185,28 @@ def test_max_number_with_empty():
     expected = "the tree are empty"
     # set actual to return value of find_maximum_value call
     actual = tree.find_maximum_value()
+    # assert actual is same as expected
+    assert actual == expected
+def test_breadth_first():
+    # Arrange
+    # Create tree instance
+    tree = BinaryTree()
+
+    # Create Nodes
+    a_node = Node(1)
+    b_node = Node(2)
+    c_node = Node(5)
+    d_node = Node(4)
+    a_node.left = b_node
+    a_node.right = c_node
+    b_node.left = d_node
+
+    # Add Root node to tree
+    tree.root = a_node
+
+    # set expected list
+    expected = [1,2,5,4]
+    # set actual to return value of post_order call
+    actual = breadth_first(tree)
     # assert actual is same as expected
     assert actual == expected

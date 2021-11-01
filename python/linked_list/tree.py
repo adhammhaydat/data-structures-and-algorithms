@@ -147,3 +147,31 @@ class BinaryTree:
         return max_number
 
 
+def  breadth_first(tree):
+        """
+        A binary tree method which returns a list of items that it contains
+
+        input: None
+
+        output: tree items
+        """
+
+        # Queue breadth <-- new Queue()
+        breadth = Queue()
+        # breadth.enqueue(root)
+        breadth.enqueue(tree.root)
+        if not tree.root:
+            return None
+        list_of_items = []
+
+        while breadth.peek():
+            front = breadth.dequeue()
+            list_of_items += [front.data]
+
+            if front.left:
+                breadth.enqueue(front.left)
+
+            if front.right:
+                breadth.enqueue(front.right)
+
+        return list_of_items
