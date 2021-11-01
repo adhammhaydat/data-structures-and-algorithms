@@ -210,3 +210,18 @@ def test_breadth_first():
     actual = breadth_first(tree)
     # assert actual is same as expected
     assert actual == expected
+
+def test_breadth_first_empty_tree():
+    # Arrange
+    # Create tree instance
+    tree = BinaryTree()
+
+    tree.root=None
+
+
+    # set expected list
+    expected = None
+    # set actual to return value of post_order call
+    actual = breadth_first(tree)
+    # assert actual is same as expected
+    assert actual == expected

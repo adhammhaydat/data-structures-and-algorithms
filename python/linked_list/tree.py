@@ -151,11 +151,12 @@ def  breadth_first(tree):
         """
         A binary tree method which returns a list of items that it contains
 
-        input: None
+        input: tree
 
         output: tree items
         """
-
+        if not tree.root:
+            return None
         # Queue breadth <-- new Queue()
         breadth = Queue()
         # breadth.enqueue(root)
