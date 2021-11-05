@@ -8,7 +8,7 @@ pull: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/39
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](../image/fizzBuzz.png)
+![](../image/k-ary-tree.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

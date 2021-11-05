@@ -40,6 +40,7 @@ To run your tests
 | Tree                  |[view page](python/code_challenges/tree.md) |
 | Tree-Max              | [view page](python/code_challenges/tree-max.md) |
 | Breadth First         | [view page](python/code_challenges/breadth_first.md) |
+| tree-fizz-buzz        | [view page](python/code_challenges/tree-fizz-buzz.md) |
 
 
 
