@@ -4,6 +4,7 @@ Write a function called validate brackets accept string value
 representing whether or not the brackets in
 the string are balanced
 Return boolean
+### pull :https://github.com/adhammhaydat/data-structures-and-algorithms/pull/34
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![](../image/validate_brackets.jpg)

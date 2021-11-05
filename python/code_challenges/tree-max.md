@@ -2,6 +2,9 @@
 <!-- Description of the challenge -->
 create a method to find the max number insid the tree
 
+pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/37
+
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
