@@ -5,6 +5,8 @@ Write a function called fizz buzz tree
 Arguments: k-ary tree
 Return: new k-ary tree
 
+pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/40
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
