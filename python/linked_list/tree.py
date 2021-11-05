@@ -161,7 +161,7 @@ def breadth_first(tree):
         breadth = Queue()
         # breadth.enqueue(root)
         breadth.enqueue(tree.root)
-        
+
         list_of_items = []
 
         while breadth.peek():
@@ -175,3 +175,4 @@ def breadth_first(tree):
                 breadth.enqueue(front.right)
 
         return list_of_items
+

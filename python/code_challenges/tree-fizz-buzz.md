@@ -5,12 +5,10 @@ Write a function called fizz buzz tree
 Arguments: k-ary tree
 Return: new k-ary tree
 
-pull req: https://github.com/adhammhaydat/data-structures-and-algorithms/pull/39
-
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](../image/fizzBuzz.png)
+![](../image/k-ary-tree.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
